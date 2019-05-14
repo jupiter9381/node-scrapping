@@ -1,0 +1,35 @@
+{
+  "name": "manomano",
+  "version": "1.0.0",
+  "description": "Manomano site scrapping using node.js",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client"
+  },
+  "author": "Jupiter",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cheerio": "^1.0.0-rc.2",
+    "concurrently": "^4.1.0",
+    "csv-writer": "^1.2.0",
+    "date-and-time": "^0.6.3",
+    "express": "^4.16.4",
+    "https": "^1.0.0",
+    "keypress": "^0.2.1",
+    "mongoose": "^5.4.3",
+    "mysql": "^2.16.0",
+    "puppeteer": "^1.11.0",
+    "puppeteer-firefox": "^0.4.2",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
